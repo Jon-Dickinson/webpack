@@ -31,7 +31,7 @@ yarn (or) npm install
 yarn start (or) npm run serve
 ```
 
-```JSON
+```JS
 "scripts": {
   "start": "env-cmd -f .env.development webpack serve --mode development --open"
 },
@@ -42,7 +42,7 @@ yarn start (or) npm run serve
 
 ### Changes trigger app to recompile
 
-```BASH
+```JS
 [webpack-dev-server] App updated. Recompiling...
 [webpack-dev-server] App hot update...
 ```
