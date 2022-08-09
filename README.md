@@ -4,8 +4,6 @@
 
 ### JDickinson, Aug 2022
 
-<br>
-
 ```BASH
 Webpack shell with CLI development and production builds.
 React function based components with Hooks to manage state.
