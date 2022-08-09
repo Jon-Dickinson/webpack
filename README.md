@@ -10,7 +10,7 @@ React function based components with Hooks to manage state.
 Presentation uses SCSS and Emotion Styled Components.
 .env files are bundled.
 Typescript added and configured.
-Production version is built and output to dist directory.
+Production version is built and output into dist directory.
 ```
 
 <br>
