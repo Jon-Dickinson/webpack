@@ -55,7 +55,7 @@ yarn start (or) npm run serve
 yarn build (or) npm run build
 ```
 
-```JSON
+```JS
 "scripts": {
   "build": "env-cmd -f .env.production webpack --mode production"
 },
