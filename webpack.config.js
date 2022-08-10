@@ -5,7 +5,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "index.bundle.js",
-    publicPath: '/',
+    publicPath: "/",
   },
   devServer: {
     port: 3000,
@@ -20,6 +20,7 @@ module.exports = {
           loader: "babel-loader",
         },
       },
+      { test: /\.tsx?$/, loader: "ts-loader" },
       {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
@@ -37,6 +38,9 @@ module.exports = {
         ],
       },
     ],
+  },
+  resolve: {
+    extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
   },
   plugins: [new MiniCssExtractPlugin()],
 };

@@ -2,6 +2,10 @@ import styled from '@emotion/styled';
 
 // reusable styled components
 
+export interface IStyleProps {
+  width?: number;
+}
+
 export const BaseWrapperVertical = styled.div`
   position: relative;
   display: inline-flex;
@@ -26,6 +30,17 @@ export const WrapperCenter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`;
+
+export const FlexMidContainer = styled.div<IStyleProps>`
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  padding-left: 20px;
+  margin-right:auto;
+  padding-right: 20px;
+  max-width:  ${ ({ width }) => width }px;
 `;
 
 export const Column = styled.div`
