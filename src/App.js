@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 import Dashboard from "./Components/Dashboard/";
 import AppName from "./Components/Name";
 import NavColumn from "./Components/NavColumn";
-import DarkModeComponent from "./Components/DarkMode/DarkModeComponent";
+import DarkModeComponent from "./Components/DarkMode";
 
 import "./App.scss";
 
