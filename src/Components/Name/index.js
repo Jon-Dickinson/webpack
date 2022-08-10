@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "@emotion/styled";
 import logo from "../../Assets/logo.png";
 import { LogoModified } from "../../Styles";
 

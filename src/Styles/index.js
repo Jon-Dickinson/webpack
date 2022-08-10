@@ -55,11 +55,18 @@ export const Block = styled.div`
   align-items: center;
 `;
 
+export const LogoBlock = styled.div`
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  transform: translate(-25px, -50px);
+`;
+
 export const LogoModified = styled.div`
   position: relative;
   display: inline-block;
   float: left;  /* intentional */
-  margin-left: 12px;
+  margin-left: 10px;
   margin-top: 4px;
   z-index: 1500;
 
