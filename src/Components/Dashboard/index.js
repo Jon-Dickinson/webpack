@@ -4,7 +4,7 @@ import { BaseWrapperVertical, Row } from "../../Styles";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Base from "./Base";
 import Example from "./Example";
-import AddressList from "./Content";
+import Content from "./Content";
 
 export const NavBlock = styled.div`
   position: relative;
@@ -28,7 +28,7 @@ export default function Dashboard() {
         <Switch>
           <Route exact path="/">
             <Base />
-            <AddressList/>
+            <Content/>
           </Route>
           <Route exact path="/example">
             <Example />

@@ -36,50 +36,27 @@ export const RowToColumn = styled.div`
   }
 `;
 
-interface IValueProps {
-  technology: string;
-  desciption: string;
-}
-
-function Value({ technology, desciption }: IValueProps) {
-
-  return (
-    <VerticalInfo>
-      <Heading>
-        {technology}
-      </Heading>
-      <Desciption>
-        {desciption}
-      </Desciption>
-    </VerticalInfo>
-  );
-}
-
-interface IValueRowProps {
-  values: Array<IValueProps>;
-}
-
-function ValueRow({ values }: IValueRowProps) {
-  return (
-    <Row>
-      {
-        values.map((valueProps) => <Value {...valueProps} />)
-      }
-    </Row>
-  )
-}
-
-export default function AddressList() {
+export default function Content() {
   return (
     <BaseWrapperVertical>
       <FlexMidContainer width={960}>
         <RowToColumn>
-          <ValueRow values={[
-            { technology: 'Support Key EDI Specifications and Formats', desciption: 'Synatic supports EDIs and APIs all on one platform allowing you to send and receive data using B2B EDI specific formats, such as HL7, AL3 and X12, as well as standard transport protocols, including HTTP/S, FTPS, AS2, and SFTP.' },
-          ]} />
-          <ValueRow values={[
-            { technology: 'API that Supports EDI/B2B Communication', desciption: 'Synatic allows you to use APIs to innovate on top of EDI document standards. Enabling your business to integrate modern applications with traditional B2B protocols.' },
-          ]} />
+          <VerticalInfo>
+            <Heading>
+              Support Key EDI Specifications and Formats
+            </Heading>
+            <Desciption>
+              Synatic supports EDIs and APIs all on one platform allowing you to send and receive data using B2B EDI specific formats, such as HL7, AL3 and X12, as well as standard transport protocols, including HTTP/S, FTPS, AS2, and SFTP.
+            </Desciption>
+          </VerticalInfo>
+          <VerticalInfo>
+            <Heading>
+              API that Supports EDI/B2B Communication
+            </Heading>
+            <Desciption>
+              Synatic allows you to use APIs to innovate on top of EDI document standards. Enabling your business to integrate modern applications with traditional B2B protocols.
+            </Desciption>
+          </VerticalInfo>
         </RowToColumn>
       </FlexMidContainer>
     </BaseWrapperVertical>

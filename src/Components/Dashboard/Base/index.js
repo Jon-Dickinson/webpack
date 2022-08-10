@@ -19,16 +19,16 @@ export default function Base() {
               y2="150.256%"
               id="a"
             >
-              <stop stop-color="#60C1CB" offset="0%" />
-              <stop stop-color="#008FBD" offset="37.107%" />
-              <stop stop-color="#00185B" offset="100%" />
+              <stop stopColor="#60C1CB" offset="0%" />
+              <stop stopColor="#008FBD" offset="37.107%" />
+              <stop stopColor="#00185B" offset="100%" />
             </linearGradient>
             <linearGradient x1="79.037%" y1="100%" x2="79.037%" y2="0%" id="b">
-              <stop stop-color="#FFC000" offset="0%" />
-              <stop stop-color="#E94E1B" offset="100%" />
+              <stop stopColor="#FFC000" offset="0%" />
+              <stop stopColor="#E94E1B" offset="100%" />
             </linearGradient>
           </defs>
-          <g fill-rule="nonzero" fill="none">
+          <g fillRule="nonzero" fill="none">
             <path
               d="M24 0v4.603H6.743a2.2 2.2 0 0 0-2.188 2.175V14.614H24v4.603H0V6.814C0 3.088 2.96.061 6.632.001L6.743 0H24Z"
               fill="url(#a)"
