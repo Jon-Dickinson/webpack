@@ -1,6 +1,6 @@
 # Synatic
 
-![](https://github.com/Jon-Dickinson/synatic-2022/src/Assets/screen.png)
+![](https://github.com/Jon-Dickinson/synatic-2022/blob/master/src/Assets/screen.png)
 
 ### JDickinson, Aug 2022
 
