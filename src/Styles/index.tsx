@@ -6,6 +6,14 @@ export interface IStyleProps {
   width?: number;
 }
 
+export const BaseWrapper = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  float: left;
+`;
+
 export const BaseWrapperVertical = styled.div`
   position: relative;
   display: inline-flex;

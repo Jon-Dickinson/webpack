@@ -6,6 +6,7 @@ import AppName from "./Components/Name";
 import NavColumn from "./Components/NavColumn";
 import DarkModeComponent from "./Components/DarkMode";
 
+import "beautiful-react-diagrams/styles.css";
 import "./App.scss";
 
 export const Header = styled.div`

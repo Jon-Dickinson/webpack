@@ -48,14 +48,9 @@ a {
   color: var(--color-blue);
 }
 
-::selection {
-  color: none;
-  background: none;
-}
-
-::-moz-selection {
-  color: none;
-  background: none;
+a:hover {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 #root {
@@ -87,6 +82,10 @@ a {
   margin-top: 20px;
 }
 
+.padding-all-20 {
+  padding: 20px;
+}
+
 .dark-mode {
   background-color: #251b99;
 
@@ -97,4 +96,11 @@ a {
 
 .contrast-button {
   fill: #251b99;
+}
+
+.bi.bi-diagram {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
 }

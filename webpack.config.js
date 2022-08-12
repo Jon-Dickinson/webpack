@@ -17,13 +17,27 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: "babel-loader"
         },
       },
-      { test: /\.tsx?$/, loader: "ts-loader" },
+      { 
+        test: /\.tsx?$/,
+        loader: "ts-loader"
+      },
       {
         test: /\.scss$/,
-        use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader"
+        ],
+      },
+      { 
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
       },
       {
         test: /\.(gif|png|jpe?g)$/,
@@ -32,7 +46,7 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[name].[ext]",
-              outputPath: "assets/images/",
+              outputPath: "assets/images/"
             },
           },
         ],
@@ -42,5 +56,11 @@ module.exports = {
   resolve: {
     extensions: ['*', '.js', '.jsx', '.ts', '.tsx'],
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin()
+  ],
+  performance: {
+    maxAssetSize: 300000,
+    maxEntrypointSize: 300000,
+  }
 };
