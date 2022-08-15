@@ -26,7 +26,7 @@ yarn (or) npm install
 ## Start development server
 
 ```BASH
-yarn start (or) npm run serve
+yarn start (or) npm run start
 ```
 
 ```JS
